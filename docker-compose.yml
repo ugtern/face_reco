@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+ face_reco:
+   build: .
+   volumes:
+     - .:/face_reco
+   ports:
+     - "8000:8000"
+   command: 'python main.py'
